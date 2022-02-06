@@ -3,11 +3,7 @@
 @import "../partials/partials";
 @import "../App";
 
-.tablet {
-    @include tablet {
-        display: none;
-      }
-}
+
 
 /* ----- Nav Menu ----- */
 
@@ -93,13 +89,12 @@
     text-decoration: none;
     transition-duration: .25s;
     text-transform: uppercase;
-    &hover {
+    &:hover {
         background-color: $charcoal;
     }
     @include tablet {
         font-size: 1.25rem;
         padding: 1.5rem;
-
       }
 }
 
@@ -122,3 +117,8 @@
     }
 }
 
+.tablet {
+    @include tablet {
+        display: none;
+      }
+}
