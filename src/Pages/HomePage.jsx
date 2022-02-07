@@ -1,5 +1,17 @@
-import React from 'react';
+import '../App.scss'
+import React, { Component } from 'react';
+import Headline from '../Components/Headline.jsx'
 
-export default function HomePage() {
-  return <div></div>;
+export class HomePage extends Component {
+
+  render() {
+    return (
+    <>
+    <Headline />
+    </>
+    );
+  }
 }
+
+export default HomePage;
+

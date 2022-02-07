@@ -13,3 +13,70 @@
 body {
     background-color: $raisin-black;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+  font-family: "Avenir";
+  color: $platinum;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 900;
+  @include tablet {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 900;
+  @include tablet {
+    font-size: 1.125rem;
+    line-height: 22px;
+  }
+}
+
+h3 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 900;
+}
+
+h4 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 300;
+  @include tablet {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+h6,
+label {
+  font-size: 0.75rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $platinum;
+}
+
+p {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+
