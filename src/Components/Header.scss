@@ -3,8 +3,6 @@
 @import "../partials/partials";
 @import "../App";
 
-
-
 /* ----- Nav Menu ----- */
 
 #nav__toggle {
@@ -121,4 +119,8 @@
     @include tablet {
         display: none;
       }
+}
+
+.contact {
+    color: $em;
 }

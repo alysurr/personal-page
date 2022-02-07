@@ -18,6 +18,7 @@ export default function Header() {
           <li><Link className="nav__item" to="/projects">Projects</Link></li>
           <li><Link className="nav__item" to="/skills">Skills</Link></li>
           <li><Link className="nav__item" to="/gallery">Gallery</Link></li>
+          <li><Link className="nav__item contact" to="/contact">Contact</Link></li>
         </ul>
       </nav>
       <Link className="nav__icon" to="/"><img src={logo} alt="logo" className="nav__logo" /></Link>

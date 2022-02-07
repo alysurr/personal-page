@@ -1,4 +1,4 @@
-import '../App.scss'
+import '../Components/Headline.scss'
 import React, { Component } from 'react';
 import Headline from '../Components/Headline.jsx'
 

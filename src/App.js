@@ -5,6 +5,7 @@ import GalleryPage from './Pages/GalleryPage';
 import HomePage from './Pages/HomePage';
 import ProjectPage from './Pages/ProjectPage';
 import SkillsPage from './Pages/SkillsPage';
+import ContactPage from './Components/Contact';
 import './App.scss';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/gallery" component={GalleryPage} />
         <Route path="/project" component={ProjectPage} />
         <Route path="/skills" component={SkillsPage} />
+        <Route path="/contact" component={ContactPage} />
       </Routes>
     </BrowserRouter>
   );
