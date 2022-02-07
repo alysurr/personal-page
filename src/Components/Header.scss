@@ -99,7 +99,7 @@
 /* ----- Nav Icon ----- */
 
 .nav__icon {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 2rem;
     @include tablet {

@@ -5,7 +5,7 @@ import GalleryPage from './Pages/GalleryPage';
 import HomePage from './Pages/HomePage';
 import ProjectPage from './Pages/ProjectPage';
 import SkillsPage from './Pages/SkillsPage';
-import ContactPage from './Components/Contact';
+import ContactPage from './Pages/ContactPage';
 import './App.scss';
 
 function App() {
@@ -13,12 +13,12 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route exact path="/" component={HomePage}/>
-        <Route path="/about" component={AboutPage} />
-        <Route path="/gallery" component={GalleryPage} />
-        <Route path="/project" component={ProjectPage} />
-        <Route path="/skills" component={SkillsPage} />
-        <Route path="/contact" component={ContactPage} />
+        <Route exact path="/" element={<HomePage />}/>
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/project" element={<ProjectPage />} />
+        <Route path="/skills" element={<SkillsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
   );

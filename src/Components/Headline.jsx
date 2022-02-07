@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 
 export default function Headline() {
 
-  return <section className="hero">
-    <h1 className="hero__h1">Alyssa</h1>
-    <h1 className="hero__h1">Junior React Developer</h1>
+  return <section className="hero content">
+    <div className="hero__container">
+      <h1 className="hero__h1">Alyssa Challender,</h1>
+      <h1 className="hero__h1">Junior React Developer</h1>
 
-    <p className="hero__p"></p>
+      <p className="hero__p">I am a web developer based out of SWFL with a passion for beautiful, interactive design and accessibile platforms that add value to people's lives.</p>
 
-    <h2><Link className="nav__item contact" to="/contact">Let's talk »</Link></h2>
-
+      <h2 className="hero__link"><Link className="contact" to="/contact">Let's talk »</Link></h2>
+    </div>
   </section>;
 }
