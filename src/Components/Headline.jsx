@@ -11,7 +11,7 @@ export default function Headline() {
 
       <p className="hero__p">I am a web developer based out of SWFL with a passion for beautiful, interactive design and accessibile platforms that add value to people's lives.</p>
 
-      <h2 className="hero__link"><Link className="contact" to="/contact">Let's talk »</Link></h2>
+      <h2 className="hero__link"><Link className="em" to="/contact">Let's talk »</Link></h2>
     </div>
   </section>;
 }

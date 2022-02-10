@@ -18,10 +18,6 @@
             padding: 0 6rem;
         }
     }
-    &__h1 {
-        font-size: 3rem;
-        line-height: 3.25rem;
-    }
     &__p {
         font-size: 1.5rem;
         line-height: 1.75rem;
@@ -35,9 +31,8 @@
         padding: 1rem 0 0;
         line-height: 2rem;
         &:hover {
-            animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+            animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) infinite;
             transform: translate3d(0, 0, 0);
-
         }
     }
 }

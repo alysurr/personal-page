@@ -1,0 +1,8 @@
+@use '../partials/typography' as *;
+@import "../partials/mixins";
+@import "../partials/partials";
+@import "../App";
+
+.contact {
+    padding: 5rem 2rem;
+}
