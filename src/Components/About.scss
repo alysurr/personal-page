@@ -1,0 +1,15 @@
+@use '../partials/typography' as *;
+@import "../partials/mixins";
+@import "../partials/partials";
+@import "../App";
+
+.about {
+    padding: 5rem 2rem;
+    @include tablet {
+        padding: 0 4rem;
+
+    }
+    @include desktop {
+        padding: 0 6rem;
+    }
+}

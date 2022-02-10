@@ -1,5 +1,6 @@
 import React from 'react';
+import Projects from '../Components/Projects'
 
 export default function ProjectPage() {
-  return <div></div>;
+  return <Projects />;
 }

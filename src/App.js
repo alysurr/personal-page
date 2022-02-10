@@ -6,6 +6,7 @@ import HomePage from './Pages/HomePage';
 import ProjectPage from './Pages/ProjectPage';
 import SkillsPage from './Pages/SkillsPage';
 import ContactPage from './Pages/ContactPage';
+import Footer from './Components/Footer.jsx'
 import './App.scss';
 
 function App() {
