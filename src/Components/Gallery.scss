@@ -1,0 +1,17 @@
+@use '../partials/typography' as *;
+@import "../partials/mixins";
+@import "../partials/partials";
+@import "../App";
+
+
+.gallery {
+    max-width: 90vw;
+    margin: 0 auto;
+    height: 20rem;
+
+    &__img {
+        object-position: center top;
+        max-width: 5rem;
+    }
+}
+
