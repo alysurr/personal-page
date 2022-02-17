@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Headline() {
 
-  return <><section className="hero content">
+  return <><section className="hero">
   
     <div className="hero__container">
       <h1 className="hero__h1">Alyssa Challender,</h1>
