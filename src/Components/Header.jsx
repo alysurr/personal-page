@@ -14,10 +14,10 @@ export default function Header() {
 
         <ul className="nav__box">
           <li><Link className="nav__item tablet" to="/">Home</Link></li>
-          <li><Link className="nav__item" to="/about">About</Link></li>
           <li><Link className="nav__item" to="/skills">Skills</Link></li>
           <li><Link className="nav__item" to="/projects">Projects</Link></li>
-          <li><Link className="nav__item" to="/gallery">Gallery</Link></li>
+          {/* <li><Link className="nav__item" to="/gallery">Gallery</Link></li> */}
+          <li><Link className="nav__item" to="/about">About</Link></li>
           <li><Link className="nav__item em" to="/contact">Contact</Link></li>
         </ul>
       </nav>

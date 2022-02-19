@@ -1,6 +1,6 @@
 import React from 'react';
-import Projects from '../Components/Projects'
+import Project from '../Components/Project'
 
 export default function ProjectPage() {
-  return <Projects />;
+  return <Project />;
 }
