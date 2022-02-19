@@ -4,8 +4,6 @@ import PT from "prop-types";
 import {
   LightgalleryProvider,
   LightgalleryItem,
-  withLightgallery,
-  useLightgallery
 } from "react-lightgallery";
 
 const images = [
@@ -30,7 +28,7 @@ const images = [
 const PhotoItem = ({ image, thumb, group }) => (
   <div style={{ maxWidth: "250px", width: "200px", padding: "5px" }}>
     <LightgalleryItem group={group} src={image} thumb={thumb}>
-      <img src={image} style={{ width: "100%" }} />
+      <img src={image} alt="" style={{ width: "100%" }} />
     </LightgalleryItem>
   </div>
 );

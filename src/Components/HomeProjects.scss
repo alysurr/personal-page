@@ -1,0 +1,19 @@
+@use '../partials/typography' as *;
+@import "../partials/mixins";
+@import "../partials/partials";
+@import "../App";
+
+
+.home-projects {
+    padding: 0 2rem;
+    background-color: $raisin-black;
+    @include tablet {
+        padding: 0 4rem;
+        
+    }
+    @include desktop {
+        padding: 0 6rem;
+    }
+
+    
+}
