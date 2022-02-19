@@ -1,6 +1,7 @@
 import '../Components/Headline.scss'
 import React, { Component } from 'react';
 import Headline from '../Components/Headline.jsx'
+import HomeProjects from '../Components/HomeProjects';
 
 class HomePage extends Component {
 
@@ -8,6 +9,7 @@ class HomePage extends Component {
     return (
     <>
     <Headline />
+    <HomeProjects />
     </>
     );
   }

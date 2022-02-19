@@ -1,37 +1,12 @@
 import './Gallery.scss'
 import React from 'react'
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import { Image } from "semantic-ui-react";
-
-const CustomDot = ({ active, onClick }) => {
-  return (
-    <li>
-      <button
-        className={`custom-dot ${active ? "custom-dot--active" : ""}`}
-        onClick={() => onClick()}
-      />
-    </li>
-  );
-};
-
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    paritialVisibilityGutter: 60
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 768 },
-    items: 2,
-    paritialVisibilityGutter: 50
-  },
-  mobile: {
-    breakpoint: { max: 768, min: 0 },
-    items: 1,
-    paritialVisibilityGutter: 30
-  }
-};
+import PT from "prop-types";
+import {
+  LightgalleryProvider,
+  LightgalleryItem,
+  withLightgallery,
+  useLightgallery
+} from "react-lightgallery";
 
 const images = [
   "https://i.imgur.com/ddCMNtp.png",
@@ -52,33 +27,49 @@ const images = [
   "https://i.imgur.com/uEPhLfN.png"
 ];
 
-const Gallery = ({ deviceType }) => {
-  return ( <div className="content">
-    <Carousel
-        className="gallery"
-        ssr={true}
-        partialVisbile
-        deviceType={deviceType}
-        itemClass="image-item"
-        responsive={responsive}
-        showDots={false}
-        customDot={<CustomDot />}
-      >
-        {images.map(image => {
-          return (
-            <Image
-              draggable={false}
-              style={{
-                width: "100%", 
-                height: "100%", 
-                objectFit: "cover"
-              }}
-              src={image}
-            />
-          );
-        })}
-      </Carousel>
-  </div> )
+const PhotoItem = ({ image, thumb, group }) => (
+  <div style={{ maxWidth: "250px", width: "200px", padding: "5px" }}>
+    <LightgalleryItem group={group} src={image} thumb={thumb}>
+      <img src={image} style={{ width: "100%" }} />
+    </LightgalleryItem>
+  </div>
+);
+PhotoItem.propTypes = {
+  image: PT.string.isRequired,
+  thumb: PT.string,
+  group: PT.string.isRequired
 };
+export default function Gallery() {
+  
+  return (
+    <div>
+      <LightgalleryProvider
+    onBeforeOpen={() => console.info("onBeforeOpen")}
+    onAfterOpen={() => console.info("onAfterOpen")}
+    onSlideItemLoad={() => console.info("onSlideItemLoad")}
+    onBeforeSlide={() => console.info("onBeforeSlide")}
+    onAfterSlide={() => console.info("onAfterSlide")}
+    onBeforePrevSlide={() => console.info("onBeforePrevSlide")}
+    onBeforeNextSlide={() => console.info("onBeforeNextSlide")}
+    onDragstart={() => console.info("onDragstart")}
+    onDragmove={() => console.info("onDragmove")}
+    onDragend={() => console.info("onDragend")}
+    onSlideClick={() => console.info("onSlideClick")}
+    onBeforeClose={() => console.info("onBeforeClose")}
+    onCloseAfter={() => console.info("onCloseAfter")}
+  >
 
-export default Gallery;
+  <div style={{
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center"
+    }}
+  >
+    {images.map((p, idx) => (
+      <PhotoItem key={idx} image={p} group="group2" />
+    ))}
+  </div>
+  </LightgalleryProvider>
+  </div>
+  )
+}
