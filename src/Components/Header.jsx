@@ -13,7 +13,7 @@ export default function Header() {
         </label>
 
         <ul className="nav__box">
-          <li><Link className="nav__item tablet" to="/">Home</Link></li>
+          <li><Link className="nav__item" to="/">Home</Link></li>
           <li><Link className="nav__item" to="/projects">Projects</Link></li>
             {/* <li><Link className="nav__item" to="/skills">Skills</Link></li>
         <li><Link className="nav__item" to="/gallery">Gallery</Link></li> */}
