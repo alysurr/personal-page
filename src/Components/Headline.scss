@@ -3,11 +3,7 @@
 @import "../partials/partials";
 @import "../App";
 
-body {
-    @include tablet {
-        background: none;
-    }
-}
+
 
 .hero {
     padding-top: 5rem;
@@ -26,7 +22,9 @@ body {
             padding: 0 6rem;
         }
     }
-    &__p {}
+    &__p {
+        max-width: 50rem;
+    }
     &__link {
         padding: 1rem 0 0;
         line-height: 2rem;

@@ -19,8 +19,7 @@
         flex-direction: column;
         @include tablet {
             flex-direction: row;
-            flex-wrap: wrap;
-            width: 90vw;
+            max-width: 90vw;
         }
     }
 

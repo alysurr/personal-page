@@ -1,0 +1,22 @@
+@use '../partials/typography' as *;
+@import "../partials/mixins";
+@import "../partials/partials";
+@import "../App";
+
+.skills {
+    padding: 2rem;
+    @include tablet {
+        padding: 0 4rem;
+        
+    }
+    @include desktop {
+        padding: 0 6rem;
+    }
+    &__img {
+        max-height: 6rem;
+        margin: 2rem 1rem;
+        @include tablet {
+            margin-bottom: 5rem;
+        }
+    }
+}
