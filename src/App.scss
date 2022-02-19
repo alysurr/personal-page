@@ -1,6 +1,6 @@
-@use "partials/typography";
-@import "partials/mixins";
-@import "partials/partials";
+@use "./Partials/typography";
+@import "./Partials/mixins";
+@import "./Partials/partials";
 
 *,
 *::before,
